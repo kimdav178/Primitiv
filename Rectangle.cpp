@@ -46,16 +46,28 @@ void Rectangle::setColor(double red, double green, double blue)
     this->blue = blue;
 }
 
-void Rectangle::changeSize(double N)
-{
+void Rectangle::changeSize(double N) {
     A *= N;
     B *= N;
     C *= N;
     D *= N;
 }
 
-void Rectangle::paintLines()
-{
+void Rectangle::changeHeight(double N) {
+    A.setY(A.getY() * N);
+    B.setY(B.getY() * N);
+    C.setY(C.getY() * N);
+    D.setY(D.getY() * N);
+}
+
+void Rectangle::changeWidth(double N) {
+    A.setX(A.getX() * N);
+    B.setX(B.getX() * N);
+    C.setX(C.getX() * N);
+    D.setX(D.getX() * N);
+}
+
+void Rectangle::paintLines() {
     glBegin(GL_LINES);
     glColor3f(red, green, blue);
     glVertex2f(A.getX(), A.getY());

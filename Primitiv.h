@@ -20,6 +20,10 @@ public:
 
     virtual void changeSize(double N) = 0;  // изменить размер в N раз (увеличить), чтобы уменьшить - дробное число
 
+    virtual void changeHeight(double N) = 0;
+
+    virtual void changeWidth(double N) = 0;
+
     virtual void changePositionUp(double up) = 0;  // движение вверх
 
     virtual void changePositionDown(double down) = 0;  // движение вниз

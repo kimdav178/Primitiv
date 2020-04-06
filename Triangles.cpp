@@ -86,22 +86,31 @@ void Triangle::paintPolygon()
     glEnd();
 };
 
-void Triangle::changeSize(double N)
-{
+void Triangle::changeSize(double N) {
     A *= N;
     B *= N;
     C *= N;
 };
 
-void Triangle::changePositionUp(double up)
-{
+void Triangle::changeHeight(double N) {
+    A.setY(A.getY() * N);
+    B.setY(B.getY() * N);
+    C.setY(C.getY() * N);
+}
+
+void Triangle::changeWidth(double N) {
+    A.setX(A.getX() * N);
+    B.setX(B.getX() * N);
+    C.setX(C.getX() * N);
+}
+
+void Triangle::changePositionUp(double up) {
     A.setY(A.getY() + up);
     B.setY(B.getY() + up);
     C.setY(C.getY() + up);
 }
 
-void Triangle::changePositionDown(double down)
-{
+void Triangle::changePositionDown(double down) {
     A.setY(A.getY() - down);
     B.setY(B.getY() - down);
     C.setY(C.getY() - down);

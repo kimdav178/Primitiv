@@ -34,6 +34,20 @@ public:
 
     void changeB(Vector2D B);  // изменить второй конец пружины
 
+    void moveUp(double a);
+
+    void moveDown(double a);
+
+    void moveLeft(double a);
+
+    void moveRight(double a);
+
+    void changeSize(double a);
+
+    void changeHeight(double a);
+
+    void changeWidth(double a);
+
     void paintGorisont();  // рисование пружины горизонтально
 
     void paintVertic(); // рисование пружины вертикально

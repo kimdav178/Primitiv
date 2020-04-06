@@ -41,23 +41,27 @@ void Circle::setColor(double red, double green, double blue)
     this->blue = blue;
 }
 
-void Circle::changeRadius(double radius)
-{
+void Circle::changeRadius(double radius) {
     this->radius = radius;
 }
 
-void Circle::changeSize(double N)
-{
+void Circle::changeSize(double N) {
     radius *= N;
 }
 
-void Circle::changePositionUp(double up)
-{
+void Circle::changeHeight(double N) {
+    radius *= N;
+}
+
+void Circle::changeWidth(double N) {
+    radius *= N;
+}
+
+void Circle::changePositionUp(double up) {
     A.setY(A.getY() + up);
 }
 
-void Circle::changePositionDown(double down)
-{
+void Circle::changePositionDown(double down) {
     A.setY(A.getY() - down);
 }
 
@@ -78,7 +82,7 @@ void Circle::paintLines()
     {
         double angle = 2.0 * 3.1415926 * double(i) / 50;
         double dx = radius * cosf(angle);
-        double dy = radius * sinf(angle);
+        double dy = 1.8 * radius * sinf(angle);
         glColor3d(red,green,blue);
         glVertex2f(this->A.getX() + dx, this->A.getY() + dy);
     }
@@ -93,7 +97,7 @@ void Circle::paintPolygon()
     {
         double angle = 2.0 * 3.1415926 * double(i) / 50;
         double dx = radius * cosf(angle);
-        double dy = radius * sinf(angle);
+        double dy = 1.8 * radius * sinf(angle);
         glColor3d(red,green,blue);
         glVertex2f(this->A.getX() + dx, this->A.getY() + dy);
     }

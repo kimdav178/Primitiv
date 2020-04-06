@@ -76,46 +76,57 @@ Square::Square(Vector2D A, Vector2D C, double red, double green, double blue)
     this->blue = blue;
 }
 
-void Square::setColor(double red, double green, double blue)
-{
+void Square::setColor(double red, double green, double blue) {
     this->red = red;
     this->green = green;
     this->blue = blue;
 }
 
-void Square::changeSize(double N)
-{
+void Square::changeSize(double N) {
     A *= N;
     B *= N;
     C *= N;
     D *= N;
 }
 
-void Square::paintLines()
-{
+void Square::changeHeight(double N) {
+    A *= N;
+    B *= N;
+    C *= N;
+    D *= N;
+}
+
+void Square::changeWidth(double N) {
+    A *= N;
+    B *= N;
+    C *= N;
+    D *= N;
+}
+
+void Square::paintLines() {
     glBegin(GL_LINES);
     glColor3f(red, green, blue);
-    glVertex2f(A.getX(), A.getY());
+    glVertex2f(A.getX(), 1.8 * A.getY());
     glColor3f(red, green, blue);
-    glVertex2f(B.getX(), B.getY());
+    glVertex2f(B.getX(), 1.8 * B.getY());
     glEnd();
     glBegin(GL_LINES);
     glColor3f(red, green, blue);
-    glVertex2f(B.getX(), B.getY());
+    glVertex2f(B.getX(), 1.8 * B.getY());
     glColor3f(red, green, blue);
-    glVertex2f(C.getX(), C.getY());
+    glVertex2f(C.getX(), 1.8 * C.getY());
     glEnd();
     glBegin(GL_LINES);
     glColor3f(red, green, blue);
-    glVertex2f(C.getX(), C.getY());
+    glVertex2f(C.getX(), 1.8 * C.getY());
     glColor3f(red, green, blue);
-    glVertex2f(D.getX(), D.getY());
+    glVertex2f(D.getX(), 1.8 * D.getY());
     glEnd();
     glBegin(GL_LINES);
     glColor3f(red, green, blue);
-    glVertex2f(A.getX(), A.getY());
+    glVertex2f(A.getX(), 1.8 * A.getY());
     glColor3f(red, green, blue);
-    glVertex2f(D.getX(), D.getY());
+    glVertex2f(D.getX(), 1.8 * D.getY());
     glEnd();
 }
 
@@ -123,13 +134,13 @@ void Square::paintPolygon()
 {
     glBegin(GL_POLYGON);
     glColor3f(red, green, blue);
-    glVertex2f(A.getX(), A.getY());
+    glVertex2f(A.getX(), 1.8 * A.getY());
     glColor3f(red, green, blue);
-    glVertex2f(B.getX(), B.getY());
+    glVertex2f(B.getX(), 1.8 * B.getY());
     glColor3f(red, green, blue);
-    glVertex2f(C.getX(), C.getY());
+    glVertex2f(C.getX(), 1.8 * C.getY());
     glColor3f(red, green, blue);
-    glVertex2f(D.getX(), D.getY());
+    glVertex2f(D.getX(), 1.8 * D.getY());
     glEnd();
 }
 

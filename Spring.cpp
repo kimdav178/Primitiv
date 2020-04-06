@@ -47,25 +47,55 @@ void Spring::setColor(double red, double green, double blue)
     this->blue = blue;
 }
 
-void Spring::changeA(Vector2D A)
-{
+void Spring::changeA(Vector2D A) {
     this->A = A;
 }
 
-void Spring::changeB(Vector2D B)
-{
+void Spring::changeB(Vector2D B) {
     this->B = B;
 }
 
-void Spring::paintGorisont()
-{
+void Spring::moveUp(double a) {
+    A.setY(A.getY() + a);
+    B.setY(B.getY() + a);
+}
+
+void Spring::moveDown(double a) {
+    A.setY(A.getY() - a);
+    B.setY(B.getY() - a);
+}
+
+void Spring::moveLeft(double a) {
+    A.setX(A.getX() - a);
+    B.setX(B.getX() - a);
+}
+
+void Spring::moveRight(double a) {
+    A.setX(A.getX() + a);
+    B.setX(B.getX() + a);
+}
+
+void Spring::changeSize(double a) {
+    A.setY(A.getY() * a);
+    B.setY(B.getY() * a);
+    width = width * a;
+}
+
+void Spring::changeHeight(double a) {
+    A.setY(A.getY() * a);
+    B.setY(B.getY() * a);
+}
+
+void Spring::changeWidth(double a) {
+    width *= a;
+}
+
+void Spring::paintGorisont() {
     Vector2D O = A;
     int i = 0;
     bool down = false;
-    while (i < quantity * 2 + 1)
-    {
-        if (i == 0)
-        {
+    while (i < quantity * 2 + 1) {
+        if (i == 0) {
             glBegin(GL_LINES);
             glColor3f(red, green, blue);
             glVertex2f(O.getX(), O.getY());

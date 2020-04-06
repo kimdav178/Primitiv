@@ -33,6 +33,10 @@ public:
     void changeSize(
             double N) override;  // изменить размер прямоугольника в N раз (увеличить), чтобы уменьшить - дробное число
 
+    void changeHeight(double N) override;
+
+    void changeWidth(double N) override;
+
     void changePositionUp(double up) override;  // движение вверх
 
     void changePositionDown(double down) override;  // движение вниз

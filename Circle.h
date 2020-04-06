@@ -28,6 +28,10 @@ public:
 
     void changeRadius(double radius);  // изменить радиус
 
+    void changeHeight(double N) override;
+
+    void changeWidth(double N) override;
+
     void changePositionUp(double up) override;  // движение вверх
 
     void changePositionDown(double down) override;  // движение виз

@@ -34,6 +34,10 @@ public:
 
     void changeSize(double N) override;  // изменить размер блока в N раз (увеличить), чтобы уменьшить - дробное число
 
+    void changeHeight(double N) override;
+
+    void changeWidth(double N) override;
+
     void paintLines() override;  // рисуем только линии, не закрашивая внутри
 
     void paintPolygon() override;  // рисуем, закрашивая все

@@ -152,35 +152,51 @@ void keyboard(unsigned char key, int x, int y) {
         };
     }
 
-    if ((key == 'w') || (key == 'ц')) {     // Двигать примитив вверх
+    if (key == 'w') {     // Двигать примитив вверх
         if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
             s[n].p->changePositionUp(0.01f);
         } else {
-            n = n;
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.moveUp(0.01);
+            } else {
+                n = n;
+            }
         };
     }
 
-    if ((key == 'a') || (key == 'ф')) {     // Двигать примитив влево
+    if (key == 'a') {     // Двигать примитив влево
         if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
             s[n].p->changePositionLeft(0.01f);
         } else {
-            n = n;
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.moveLeft(0.01);
+            } else {
+                n = n;
+            }
         };
     }
 
-    if ((key == 's') || (key == 'ы')) {     // Двигать примитив вниз
+    if (key == 's') {     // Двигать примитив вниз
         if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
             s[n].p->changePositionDown(0.01f);
         } else {
-            n=n;
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.moveDown(0.01);
+            } else {
+                n = n;
+            }
         };
     }
 
-    if ((key == 'd') || (key == 'в')) {     // Двигать примитив вправо
+    if (key == 'd') {     // Двигать примитив вправо
         if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
             s[n].p->changePositionRight(0.01f);
         } else {
-            n = n;
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.moveRight(0.01);
+            } else {
+                n = n;
+            }
         };
     }
 
@@ -192,7 +208,59 @@ void keyboard(unsigned char key, int x, int y) {
         if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
             s[n].p->changeSize(1.1f);
         } else {
-            n = n;
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.changeSize(1.1);
+            } else {
+                n = n;
+            }
+        };
+    }
+
+    if (key == '7') {       // Увеличить примитив в 1.1 раза
+        if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
+            s[n].p->changeHeight(1.1f);
+        } else {
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.changeHeight(1.1);
+            } else {
+                n = n;
+            }
+        };
+    }
+
+    if (key == '8') {       // Увеличить примитив в 1.1 раза
+        if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
+            s[n].p->changeHeight(0.9f);
+        } else {
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.changeHeight(0.9);
+            } else {
+                n = n;
+            }
+        };
+    }
+
+    if (key == '9') {       // Увеличить примитив в 1.1 раза
+        if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
+            s[n].p->changeWidth(1.1f);
+        } else {
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.changeWidth(1.1);
+            } else {
+                n = n;
+            }
+        };
+    }
+
+    if (key == '0') {       // Увеличить примитив в 1.1 раза
+        if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
+            s[n].p->changeWidth(0.9f);
+        } else {
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.changeWidth(0.9);
+            } else {
+                n = n;
+            }
         };
     }
 
@@ -200,7 +268,11 @@ void keyboard(unsigned char key, int x, int y) {
         if ((s[n].f1) || (s[n].f2) || (s[n].p1) || (s[n].p2)) {
             s[n].p->changeSize(0.9f);
         } else {
-            n = n;
+            if ((s[n].f3) || (s[n].f4)) {
+                s[n].g.changeSize(0.9);
+            } else {
+                n = n;
+            }
         };
     }
 

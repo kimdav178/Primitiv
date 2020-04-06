@@ -62,22 +62,29 @@ void Block::changePositionUp(double up)
     B.setY(B.getY() + up);
 }
 
-void Block::changeSize(double N)
-{
+void Block::changeSize(double N) {
     A *= N;
     B *= N;
     this->radius *= N;
 }
 
-void Block::paintLines()
-{
-    Circle a = Circle(this->A, this->radius,this->red,this->green,this->blue);
+void Block::changeHeight(double N) {
+    A.setY(A.getY() * N);
+    B.setY(B.getY() * N);
+}
+
+void Block::changeWidth(double N) {
+    radius *= N;
+}
+
+void Block::paintLines() {
+    Circle a = Circle(this->A, this->radius, this->red, this->green, this->blue);
     a.paintLines();
     //Vector2D O = (B - A);
     //Vector2D n = Vector2D(-O.getY(), O.getX());
     //Vector2D C = O + n / sqrt(3);
     //Vector2D L = O - n / sqrt(3);
-    Vector2D C(B.getX()+radius,B.getY());
+    Vector2D C(B.getX() + radius, B.getY());
     Vector2D L(B.getX()-radius,B.getY());
     Triangle b = Triangle(A, C, L,this->red,this->green,this->blue);
     b.paintLines();
