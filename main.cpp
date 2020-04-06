@@ -120,12 +120,12 @@ void keyboard(unsigned char key, int x, int y) {
 
     if (key == '5') {   // Выбор пружины
         if ((!(s[n].f2)) && (!(s[n].f4)) && (!(s[n].p2))) {
-            Vector2D v(0,5);    // Создаём вектор так, чтобы пружина нужного размера
-            Vector2D u(0,-5);   // нарисовалась в центре
+            Vector2D v(0, -0.2);    // Создаём вектор так, чтобы пружина нужного размера
+            Vector2D u(0, 0.2);   // нарисовалась в центре
             s[n].f1 = false;
             s[n].f3 = true;
             s[n].p1 = false;
-            Spring d(v,u,0.4,50,1,0,0);
+            Spring d(v, u, 0.1, 5);
             s[n].g = d;
         } else {
             n = n;

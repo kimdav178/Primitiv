@@ -23,9 +23,9 @@ Spring::Spring(Vector2D A, Vector2D B, double width, int quantity)
     this->width = width;
     this->quantity = quantity;
 
-    red = 0.5;
-    green = 0.8;
-    blue = 0.5;
+    red = 1;
+    green = 0;
+    blue = 0;
 }
 
 Spring::Spring(Vector2D A, Vector2D B, double width, int quantity, double red, double green, double blue)
