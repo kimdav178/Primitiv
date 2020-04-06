@@ -1,0 +1,104 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/david/Рабочий стол/Primitiv/Block.cpp
+Block.h
+/home/david/Рабочий стол/Primitiv/Block.h
+
+/home/david/Рабочий стол/Primitiv/Block.h
+Primitiv.h
+/home/david/Рабочий стол/Primitiv/Primitiv.h
+Circle.h
+/home/david/Рабочий стол/Primitiv/Circle.h
+
+/home/david/Рабочий стол/Primitiv/Circle.cpp
+Circle.h
+/home/david/Рабочий стол/Primitiv/Circle.h
+
+/home/david/Рабочий стол/Primitiv/Circle.h
+GL/glut.h
+-
+Vector2D.h
+/home/david/Рабочий стол/Primitiv/Vector2D.h
+Primitiv.h
+/home/david/Рабочий стол/Primitiv/Primitiv.h
+
+/home/david/Рабочий стол/Primitiv/Primitiv.h
+Vector2D.cpp
+/home/david/Рабочий стол/Primitiv/Vector2D.cpp
+
+/home/david/Рабочий стол/Primitiv/Rectangle.cpp
+Rectangle.h
+/home/david/Рабочий стол/Primitiv/Rectangle.h
+
+/home/david/Рабочий стол/Primitiv/Rectangle.h
+GL/glut.h
+-
+Primitiv.h
+/home/david/Рабочий стол/Primitiv/Primitiv.h
+
+/home/david/Рабочий стол/Primitiv/Spring.cpp
+Spring.h
+/home/david/Рабочий стол/Primitiv/Spring.h
+
+/home/david/Рабочий стол/Primitiv/Spring.h
+GL/glut.h
+-
+
+/home/david/Рабочий стол/Primitiv/Square.cpp
+Square.h
+/home/david/Рабочий стол/Primitiv/Square.h
+
+/home/david/Рабочий стол/Primitiv/Square.h
+GL/glut.h
+-
+Primitiv.h
+/home/david/Рабочий стол/Primitiv/Primitiv.h
+
+/home/david/Рабочий стол/Primitiv/Triangles.cpp
+Triangles.h
+/home/david/Рабочий стол/Primitiv/Triangles.h
+
+/home/david/Рабочий стол/Primitiv/Triangles.h
+GL/glut.h
+-
+Primitiv.h
+/home/david/Рабочий стол/Primitiv/Primitiv.h
+
+/home/david/Рабочий стол/Primitiv/Vector2D.cpp
+Vector2D.h
+/home/david/Рабочий стол/Primitiv/Vector2D.h
+
+/home/david/Рабочий стол/Primitiv/Vector2D.h
+iostream
+-
+cmath
+-
+fstream
+-
+
+/home/david/Рабочий стол/Primitiv/main.cpp
+GL/glut.h
+-
+Circle.cpp
+/home/david/Рабочий стол/Primitiv/Circle.cpp
+Rectangle.cpp
+/home/david/Рабочий стол/Primitiv/Rectangle.cpp
+Spring.cpp
+/home/david/Рабочий стол/Primitiv/Spring.cpp
+Square.cpp
+/home/david/Рабочий стол/Primitiv/Square.cpp
+Triangles.cpp
+/home/david/Рабочий стол/Primitiv/Triangles.cpp
+Block.cpp
+/home/david/Рабочий стол/Primitiv/Block.cpp
+Vector2D.h
+/home/david/Рабочий стол/Primitiv/Vector2D.h
+Primitiv.h
+/home/david/Рабочий стол/Primitiv/Primitiv.h
+

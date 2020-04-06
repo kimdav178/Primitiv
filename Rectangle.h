@@ -6,48 +6,41 @@
 #define PRIMITIV_RECTANGLE_H
 
 #include <GL/glut.h>
-#include "Vector2D.h"
+#include "Primitiv.h"
 
-class Rectangle
+class Rectangle : public Primitiv
 {
 private:
-    Vector2D A;
+    Vector2D A;  // координаты вершин
     Vector2D B;
     Vector2D C;
     Vector2D D;
 
-    double red;
-    double green;
-    double blue;
 public:
-    Rectangle(Vector2D A, Vector2D B, Vector2D C, Vector2D D);
+    Rectangle(Vector2D A, Vector2D B, Vector2D C, Vector2D D);  // задание прямоугольника по 4 вершинам
 
-    Rectangle(Vector2D A, Vector2D B, Vector2D C, Vector2D D, double red, double green, double blue);
+    Rectangle(Vector2D A, Vector2D B, Vector2D C, Vector2D D, double red, double green,
+              double blue);  // задание прямоугольника с цветом
 
-    Rectangle(Vector2D A, Vector2D C);
+    Rectangle();  // по умолчанию координаты (0, 0)
 
-    Rectangle(Vector2D A, Vector2D C, double red, double green, double blue);
+    void setColor(double red, double green, double blue) override;  // изменить цвет
 
-    Rectangle();
+    void paintLines() override;  // рисование, не закрашивая
 
-    void setColor(double red, double green, double blue);
+    void paintPolygon() override;  // рисование с закрашиванием
 
-    void paintLines();
+    void changeSize(
+            double N) override;  // изменить размер прямоугольника в N раз (увеличить), чтобы уменьшить - дробное число
 
-    void paintPolygon();
+    void changePositionUp(double up) override;  // движение вверх
 
-    void changeSIze(double N);
+    void changePositionDown(double down) override;  // движение вниз
 
-    void changePositionUp(double up);
+    void changePositionLeft(double left) override;  // движение влево
 
-    void changePositionDown(double down);
-
-    void changePositionLeft(double left);
-
-    void changePositionRight(double right);
+    void changePositionRight(double right) override;  // движение вправо
 };
-
-
 
 
 #endif //PRIMITIV_RECTANGLE_H

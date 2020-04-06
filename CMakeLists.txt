@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 project(Primitiv)
 
 set(CMAKE_CXX_STANDARD  20)
-add_executable(Primitiv main.cpp main.cpp)
+add_executable(Primitiv main.cpp main.cpp Primitiv.h Circle.h Spring.h)
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)

@@ -7,40 +7,38 @@
 
 #include <GL/glut.h>
 #include "Vector2D.h"
+#include "Primitiv.h"
 
-class Circle
+class Circle : public Primitiv
 {
 private:
-    Vector2D A;
-    double radius;
+    Vector2D A;  // центр окружности (круга)
+    double radius;  // радиус круга
 
-    double red;
-    double green;
-    double blue;
 public:
-    Circle(Vector2D A, double radius);
+    Circle(Vector2D A, double radius);  // конструктор круга по радиусу и центру
 
-    Circle();
+    Circle();  // конструктор круга (координаты (0, 0), радиус 0)
 
-    Circle(Vector2D A, double radius, double red, double green, double blue);
+    Circle(Vector2D A, double radius, double red, double green, double blue);  //конструктор по центру, радиусу и цвету
 
-    void setColor(double red, double green, double blue);
+    void setColor(double red, double green, double blue) override;  // меняем цвет кругу
 
-    void changeSize(double N);
+    void changeSize(double N) override;  // изменить размер круга в N раз (увеличить), чтобы уменьшить - дробное число
 
-    void changeRadius(double radius);
+    void changeRadius(double radius);  // изменить радиус
 
-    void changePositionUp(double up);
+    void changePositionUp(double up) override;  // движение вверх
 
-    void changePositionDown(double down);
+    void changePositionDown(double down) override;  // движение виз
 
-    void changePositionLeft(double left);
+    void changePositionLeft(double left) override;  // движение влево
 
-    void changePositionRight(double right);
+    void changePositionRight(double right) override;  // движение вправо
 
-    void paintLine();
+    void paintLines() override;  // рисуем окружность
 
-    void paintPolygon();
+    void paintPolygon() override;  // рисуем круг
 };
 
 

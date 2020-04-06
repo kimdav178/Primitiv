@@ -6,42 +6,41 @@
 #define PRIMITIV_TRIANGLES_H
 
 #include <GL/glut.h>
-#include "Vector2D.cpp"
+#include "Primitiv.h"
 
-class Triangle
+class Triangle : public Primitiv
 {
 private:
-    Vector2D A;
+    Vector2D A;  // координаты вершин треугольника
     Vector2D B;
     Vector2D C;
 
-    double red;
-    double green;
-    double blue;
 public:
-    Triangle(Vector2D A, Vector2D B, Vector2D C);
+    Triangle(Vector2D A, Vector2D B, Vector2D C);  // конструктор треугольника по трем точкам
 
-    Triangle(Vector2D A, Vector2D B, Vector2D C, double red, double green, double blue);
+    Triangle(Vector2D A, Vector2D B, Vector2D C, double red, double green,
+             double blue);  // конструктор по 3 точкам и цвет
 
-    Triangle();
+    Triangle();  // по умолчанию координаты (0,0)
 
-    ~Triangle();
+    ~Triangle();  // деструктор
 
-    void setColor(double red, double green, double blue);
+    void paintLines() override;  // рисование тругольника - линии, не закрашивая его
 
-    void paintLines();
+    void paintPolygon() override;  // рисование треугольника, закрашивая
 
-    void paintPolygon();
+    void
+    changeSize(double N) override;  // изменить размер трегольника в N раз (увеличить), чтобы уменьшить - дробное число
 
-    void changeSIze(double N);
+    void changePositionUp(double up) override;  // движение вверх
 
-    void changePositionUp(double up);
+    void changePositionDown(double down) override;  // движение вниз
 
-    void changePositionDown(double down);
+    void changePositionLeft(double left) override;  // движение влево
 
-    void changePositionLeft(double left);
+    void changePositionRight(double right) override;  // движение вправо
 
-    void changePositionRight(double right);
+    void setColor(double red, double green, double blue) override;  // изменить цвет треугольника
 };
 
 

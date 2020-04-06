@@ -1,0 +1,3 @@
+/home/david/Рабочий стол/Primitiv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/david/Рабочий стол/Primitiv/cmake-build-debug/CMakeFiles/Primitiv.dir
+/home/david/Рабочий стол/Primitiv/cmake-build-debug/CMakeFiles/edit_cache.dir

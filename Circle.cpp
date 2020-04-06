@@ -71,14 +71,15 @@ void Circle::changePositionRight(double right)
     A.setX(A.getX() + right);
 }
 
-void Circle::paintLine()
+void Circle::paintLines()
 {
     glBegin(GL_LINE_LOOP);
     for (int i = 0; i < 50; i++)
     {
-        double angle = 2.0 * 3.1415926 * double (i) / 50;
+        double angle = 2.0 * 3.1415926 * double(i) / 50;
         double dx = radius * cosf(angle);
         double dy = radius * sinf(angle);
+        glColor3d(red,green,blue);
         glVertex2f(this->A.getX() + dx, this->A.getY() + dy);
     }
     glEnd();
@@ -86,12 +87,14 @@ void Circle::paintLine()
 
 void Circle::paintPolygon()
 {
+    glLoadIdentity();
     glBegin(GL_POLYGON);
     for (int i = 0; i < 50; i++)
     {
-        double angle = 2.0 * 3.1415926 * double (i) / 50;
+        double angle = 2.0 * 3.1415926 * double(i) / 50;
         double dx = radius * cosf(angle);
         double dy = radius * sinf(angle);
+        glColor3d(red,green,blue);
         glVertex2f(this->A.getX() + dx, this->A.getY() + dy);
     }
     glEnd();

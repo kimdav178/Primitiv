@@ -6,45 +6,47 @@
 #define PRIMITIV_SQUARE_H
 
 #include <GL/glut.h>
-#include "Vector2D.h"
+#include "Primitiv.h"
 
-class Square
+class Square : public Primitiv
 {
 private:
-    Vector2D A;
+    Vector2D A;  // координаты вершин кваадрата
     Vector2D B;
     Vector2D C;
     Vector2D D;
 
-    double red;
-    double green;
-    double blue;
 public:
-    Square(Vector2D A, Vector2D B, Vector2D C, Vector2D D);
+    Square(Vector2D A, Vector2D B, Vector2D C,
+           Vector2D D);  // конструктор по 4 вершинам (если задать их не как квадрат, то и будет "не квадрат")
 
-    Square(Vector2D A, Vector2D B, Vector2D C, Vector2D D, double red, double green, double blue);
+    Square(Vector2D A, Vector2D B, Vector2D C, Vector2D D, double red, double green,
+           double blue);  // сразу раскрашиваем
 
-    Square(Vector2D A, Vector2D C);
+    Square(Vector2D A, Vector2D C);  // конструктор по двум противоположным вершинам
 
-    Square(Vector2D A, Vector2D C, double red, double green, double blue);
+    Square(Vector2D A, Vector2D C, double red, double green, double blue);  // две вершины и цвет
 
-    Square();
+    Square();  // по умолчанию все координаты (0, 0)
 
-    void setColor(double red, double green, double blue);
+    ~Square();  // деструктор
 
-    void paintLines();
+    void setColor(double red, double green, double blue) override;  // задаем цвет
 
-    void paintPolygon();
+    void paintLines() override;  // рисуем линиями, не закрашивая
 
-    void changeSIze(double N);
+    void paintPolygon() override;  // рисуем, закрашивая
 
-    void changePositionUp(double up);
+    void
+    changeSize(double N) override;  // изменить размер квадрата в N раз (увеличить), чтобы уменьшить - дробное число
 
-    void changePositionDown(double down);
+    void changePositionUp(double up) override;  // движение вверх
 
-    void changePositionLeft(double left);
+    void changePositionDown(double down) override;  // движение вниз
 
-    void changePositionRight(double right);
+    void changePositionLeft(double left) override;  // движение влево
+
+    void changePositionRight(double right) override;  // движение вправо
 };
 
 
