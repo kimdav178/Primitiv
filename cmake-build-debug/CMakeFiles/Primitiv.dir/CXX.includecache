@@ -6,75 +6,75 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Рабочий стол/Primitiv/Block.cpp
+/home/david/Рабочий стол/Physics/Block.cpp
 Block.h
-/home/david/Рабочий стол/Primitiv/Block.h
+/home/david/Рабочий стол/Physics/Block.h
 
-/home/david/Рабочий стол/Primitiv/Block.h
+/home/david/Рабочий стол/Physics/Block.h
 Primitiv.h
-/home/david/Рабочий стол/Primitiv/Primitiv.h
+/home/david/Рабочий стол/Physics/Primitiv.h
 Circle.h
-/home/david/Рабочий стол/Primitiv/Circle.h
+/home/david/Рабочий стол/Physics/Circle.h
 
-/home/david/Рабочий стол/Primitiv/Circle.cpp
+/home/david/Рабочий стол/Physics/Circle.cpp
 Circle.h
-/home/david/Рабочий стол/Primitiv/Circle.h
+/home/david/Рабочий стол/Physics/Circle.h
 
-/home/david/Рабочий стол/Primitiv/Circle.h
+/home/david/Рабочий стол/Physics/Circle.h
 GL/glut.h
 -
 Vector2D.h
-/home/david/Рабочий стол/Primitiv/Vector2D.h
+/home/david/Рабочий стол/Physics/Vector2D.h
 Primitiv.h
-/home/david/Рабочий стол/Primitiv/Primitiv.h
+/home/david/Рабочий стол/Physics/Primitiv.h
 
-/home/david/Рабочий стол/Primitiv/Primitiv.h
+/home/david/Рабочий стол/Physics/Primitiv.h
 Vector2D.cpp
-/home/david/Рабочий стол/Primitiv/Vector2D.cpp
+/home/david/Рабочий стол/Physics/Vector2D.cpp
 
-/home/david/Рабочий стол/Primitiv/Rectangle.cpp
+/home/david/Рабочий стол/Physics/Rectangle.cpp
 Rectangle.h
-/home/david/Рабочий стол/Primitiv/Rectangle.h
+/home/david/Рабочий стол/Physics/Rectangle.h
 
-/home/david/Рабочий стол/Primitiv/Rectangle.h
+/home/david/Рабочий стол/Physics/Rectangle.h
 GL/glut.h
 -
 Primitiv.h
-/home/david/Рабочий стол/Primitiv/Primitiv.h
+/home/david/Рабочий стол/Physics/Primitiv.h
 
-/home/david/Рабочий стол/Primitiv/Spring.cpp
+/home/david/Рабочий стол/Physics/Spring.cpp
 Spring.h
-/home/david/Рабочий стол/Primitiv/Spring.h
+/home/david/Рабочий стол/Physics/Spring.h
 
-/home/david/Рабочий стол/Primitiv/Spring.h
+/home/david/Рабочий стол/Physics/Spring.h
 GL/glut.h
 -
 
-/home/david/Рабочий стол/Primitiv/Square.cpp
+/home/david/Рабочий стол/Physics/Square.cpp
 Square.h
-/home/david/Рабочий стол/Primitiv/Square.h
+/home/david/Рабочий стол/Physics/Square.h
 
-/home/david/Рабочий стол/Primitiv/Square.h
+/home/david/Рабочий стол/Physics/Square.h
 GL/glut.h
 -
 Primitiv.h
-/home/david/Рабочий стол/Primitiv/Primitiv.h
+/home/david/Рабочий стол/Physics/Primitiv.h
 
-/home/david/Рабочий стол/Primitiv/Triangles.cpp
+/home/david/Рабочий стол/Physics/Triangles.cpp
 Triangles.h
-/home/david/Рабочий стол/Primitiv/Triangles.h
+/home/david/Рабочий стол/Physics/Triangles.h
 
-/home/david/Рабочий стол/Primitiv/Triangles.h
+/home/david/Рабочий стол/Physics/Triangles.h
 GL/glut.h
 -
 Primitiv.h
-/home/david/Рабочий стол/Primitiv/Primitiv.h
+/home/david/Рабочий стол/Physics/Primitiv.h
 
-/home/david/Рабочий стол/Primitiv/Vector2D.cpp
+/home/david/Рабочий стол/Physics/Vector2D.cpp
 Vector2D.h
-/home/david/Рабочий стол/Primitiv/Vector2D.h
+/home/david/Рабочий стол/Physics/Vector2D.h
 
-/home/david/Рабочий стол/Primitiv/Vector2D.h
+/home/david/Рабочий стол/Physics/Vector2D.h
 iostream
 -
 cmath
@@ -82,23 +82,35 @@ cmath
 fstream
 -
 
-/home/david/Рабочий стол/Primitiv/main.cpp
+/home/david/Рабочий стол/Physics/display.h
+iostream
+-
+cstdio
+-
+
+/home/david/Рабочий стол/Physics/keyboard.h
+iostream
+-
+display.h
+/home/david/Рабочий стол/Physics/display.h
+
+/home/david/Рабочий стол/Physics/main.cpp
 GL/glut.h
 -
 Circle.cpp
-/home/david/Рабочий стол/Primitiv/Circle.cpp
+/home/david/Рабочий стол/Physics/Circle.cpp
 Rectangle.cpp
-/home/david/Рабочий стол/Primitiv/Rectangle.cpp
+/home/david/Рабочий стол/Physics/Rectangle.cpp
 Spring.cpp
-/home/david/Рабочий стол/Primitiv/Spring.cpp
+/home/david/Рабочий стол/Physics/Spring.cpp
 Square.cpp
-/home/david/Рабочий стол/Primitiv/Square.cpp
+/home/david/Рабочий стол/Physics/Square.cpp
 Triangles.cpp
-/home/david/Рабочий стол/Primitiv/Triangles.cpp
+/home/david/Рабочий стол/Physics/Triangles.cpp
 Block.cpp
-/home/david/Рабочий стол/Primitiv/Block.cpp
-Vector2D.h
-/home/david/Рабочий стол/Primitiv/Vector2D.h
-Primitiv.h
-/home/david/Рабочий стол/Primitiv/Primitiv.h
+/home/david/Рабочий стол/Physics/Block.cpp
+keyboard.h
+/home/david/Рабочий стол/Physics/keyboard.h
+display.h
+/home/david/Рабочий стол/Physics/display.h
 

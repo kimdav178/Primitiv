@@ -1,5 +1,5 @@
-/snap/clion/107/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/david/Рабочий стол/Primitiv"
+/snap/clion/112/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/david/Рабочий стол/Physics"
 -- Found SFML 2.5.1 in /usr/lib/x86_64-linux-gnu/cmake/SFML
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/david/Рабочий стол/Primitiv/cmake-build-debug
+-- Build files have been written to: /home/david/Рабочий стол/Physics/cmake-build-debug

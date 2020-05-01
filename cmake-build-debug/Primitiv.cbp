@@ -8,110 +8,116 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/david/Рабочий стол/Primitiv/cmake-build-debug"/>
+				<Option working_dir="/home/david/Рабочий стол/Physics/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/david/Рабочий стол/Primitiv/cmake-build-debug"/>
+				<Option working_dir="/home/david/Рабочий стол/Physics/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Primitiv">
-				<Option output="/home/david/Рабочий стол/Primitiv/cmake-build-debug/Primitiv" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/david/Рабочий стол/Primitiv/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 Primitiv"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Primitiv/fast">
-				<Option output="/home/david/Рабочий стол/Primitiv/cmake-build-debug/Primitiv" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/david/Рабочий стол/Primitiv/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 Primitiv/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/david/Рабочий стол/Primitiv/cmake-build-debug"/>
+				<Option working_dir="/home/david/Рабочий стол/Physics/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Primitiv/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Primitiv">
+				<Option output="/home/david/Рабочий стол/Physics/cmake-build-debug/Primitiv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/david/Рабочий стол/Physics/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 Primitiv"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Primitiv/fast">
+				<Option output="/home/david/Рабочий стол/Physics/cmake-build-debug/Primitiv" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/david/Рабочий стол/Physics/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 Primitiv/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Рабочий\ стол/Physics/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/Circle.h">
+		<Unit filename="/home/david/Рабочий стол/Physics/Circle.h">
 			<Option target="Primitiv"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/Primitiv.h">
+		<Unit filename="/home/david/Рабочий стол/Physics/Primitiv.h">
 			<Option target="Primitiv"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/Spring.h">
+		<Unit filename="/home/david/Рабочий стол/Physics/Spring.h">
 			<Option target="Primitiv"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/main.cpp">
+		<Unit filename="/home/david/Рабочий стол/Physics/display.h">
 			<Option target="Primitiv"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/CMakeLists.txt">
+		<Unit filename="/home/david/Рабочий стол/Physics/keyboard.h">
+			<Option target="Primitiv"/>
+		</Unit>
+		<Unit filename="/home/david/Рабочий стол/Physics/main.cpp">
+			<Option target="Primitiv"/>
+		</Unit>
+		<Unit filename="/home/david/Рабочий стол/Physics/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
+		<Unit filename="/home/david/Рабочий стол/Physics/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
+		<Unit filename="/home/david/Рабочий стол/Physics/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
+		<Unit filename="/home/david/Рабочий стол/Physics/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
+		<Unit filename="/home/david/Рабочий стол/Physics/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/david/Рабочий стол/Primitiv/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
+		<Unit filename="/home/david/Рабочий стол/Physics/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
 	</Project>
